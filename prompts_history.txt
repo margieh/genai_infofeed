@@ -1,4 +1,5 @@
 Create the application structure
 
- Help me build a web application to display some articles with python. The project should be set up in a vitural env and use Flask. 
+ 1. Help me build a web application to display some articles with python. The project should be set up in a vitural env and use Flask. 
  
+ 2. Prompt 2: Create a full stack application using python and flask, integrated Bootstrap4 with CDN links and Jinja templating. It should display a list of articles with a title, truncated content, and souce link on an achor tag with read-more text and a button class and timestamp for each article. For now, you can create a few sample articles in a dictionary and display them. Give me step-by-step instructions and code to test it out. 

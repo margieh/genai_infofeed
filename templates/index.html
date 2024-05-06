@@ -6,15 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles</title>
+    <!-- Bootstrap CDN links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <h1>List of Articles</h1>
-    <ul>
-        <li>Article 1</li>
-        <li>Article 2</li>
-        <li>Article 3</li>
-    </ul>
+    <div class="container">
+        <h1>List of Articles</h1>
+        <div class="list-group">
+            {% for article in articles %}
+            <a href="{{ article.source_link }}" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">{{ article.title }}</h5>
+                <p class="mb-1">{{ article.content|truncate(100) }}</p>
+                <small class="text-muted">{{ article.timestamp }}</small>
+                <button type="button" class="btn btn-primary btn-sm float-right">Read More</button>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 
 </html>
