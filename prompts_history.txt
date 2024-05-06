@@ -1,0 +1,4 @@
+Create the application structure
+
+ Help me build a web application to display some articles with python. The project should be set up in a vitural env and use Flask. 
+ 
