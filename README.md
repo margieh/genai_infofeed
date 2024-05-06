@@ -1,5 +1,7 @@
 # News Aggregator
 
+![News Aggregator](images/project_img.png)
+
 This is a simple web application built with Python Flask that aggregates news articles from an RSS feed and displays them on a webpage. All code was generated using ChatGPT and the prompts defined in the prompts_history.txt file within this repo. 
 
 ## Features
@@ -33,12 +35,12 @@ This is a simple web application built with Python Flask that aggregates news ar
 
 ## Usage
 
-- Upon opening the application, you'll see the latest articles fetched from the configured RSS feeds.
+- Upon opening the application, you'll see the latest articles fetched from the configured RSS feed.
 - Click on the pagination links at the bottom to navigate between pages of articles.
 
 ## Configuration
 
-- You can configure the RSS feeds to fetch articles from by modifying the `app.py` file and updating the `RSS_FEEDS` list with your desired feed URLs.
+- You can configure the RSS feed to fetch articles from by modifying the `app.py` file.
 
 ## Technologies Used
 
@@ -56,4 +58,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- This project was inspired by [prompted_feed_aggregator](https://github.com/prompted-feed-aggregator) and utilizes various open-source libraries and frameworks.
+- This project was inspired by [Python Development with ChatGPT: Fullstack App Development](https://www.coursera.org/learn/python-development-with-chatgpt-fullstack-app-development/home/) and utilizes various open-source libraries and frameworks.
