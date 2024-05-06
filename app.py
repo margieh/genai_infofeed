@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
-RSS_FEED = 'https://feeds.npr.org/1126/rss.xml'
-ARTICLES_PER_PAGE = 5
+RSS_FEED = 'https://feeds.npr.org/1143/rss.xml'
+ARTICLES_PER_PAGE = 6
 
 @app.route('/')
 def home():

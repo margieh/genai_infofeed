@@ -19,23 +19,37 @@
             max-width: 100%;
             height: auto;
         }
+
+        .card {
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1 class="mt-5 mb-3">Latest Articles</h1>
-        {% for article in articles %}
-        <div class="article">
-            <h3>{{ article.title }}</h3>
-            {% if article.image_url %}
-            <img src="{{ article.image_url }}" alt="Article Image" class="img-fluid mb-3">
-            {% endif %}
-            <p>{{ article.description }}</p>
-            <p>Published: {{ article.pubDate }}</p>
-            <a href="{{ article.link }}" class="btn btn-primary" target="_blank">Read More</a>
+        <div class="row">
+            {% for article in articles %}
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{ article.title }}</h3>
+                        {% if article.image_url %}
+                        <img src="{{ article.image_url }}" alt="Article Image" class="img-fluid mb-3">
+                        {% endif %}
+                        <p>{{ article.description }}</p>
+                        <p>Published: {{ article.pubDate }}</p>
+                        <a href="{{ article.link }}" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
 
         <!-- Pagination -->
         <nav aria-label="Page navigation">

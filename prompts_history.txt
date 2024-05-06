@@ -1,5 +1,9 @@
 Create the application structure
 
- 1. Help me build a web application to display some articles with python. The project should be set up in a vitural env and use Flask. 
+ 1. Prompt 1: Help me build a web application to display some articles with python. The project should be set up in a vitural env and use Flask. 
  
  2. Prompt 2: Create a full stack application using python and flask, integrated Bootstrap4 with CDN links and Jinja templating. It should display a list of articles with a title, truncated content, and souce link on an achor tag with read-more text and a button class and timestamp for each article. For now, you can create a few sample articles in a dictionary and display them. Give me step-by-step instructions and code to test it out. 
+
+ 3. Prompt 3-4: Now building upon the previous written code, create a fullstack news aggregator application with python-flask, the NPR Africa RSS at https://feeds.npr.org/####/rss.xml. All code should contain exception handling, and keep the fields displayed as our current structure of the news aggregator app. Also, add an image field before the truncated content. While getting articles, handle errors which are forbidden and only display those articles which can be easily shown on the page. impliment pagination in this application. For pagination use font-awesome CSS linked from a CDN on the frontend and use its icons on the next and previous page buttons. Furthermore, to implement the pagination functionality from the backend, ensure that only 5 articles are shown. Images should be formatted to be the same size.
+
+ 4. Prompt 5: Now, let's update the app layout so that it contains a main article which will have 2 rows and 2 columns. Each article should be displayed in a bootstrap card divided in the rows and columns and I also want there to be hover and shadow effects on the cards. 
